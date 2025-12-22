@@ -18,13 +18,14 @@ and improve my problem-solving skills.
 
 ## 📁 Structure
 
-Each solution file is named using the format:
+Each solution file is named using the format under their own respective directory:
 
 ProblemNumber_ProblemName.py
 
 Example:
 - 704_BinarySearch.py
 - 35_SearchInsertPosition.py
+
 
 ---
 
