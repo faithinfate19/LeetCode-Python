@@ -38,3 +38,9 @@ Example:
 
 - Solutions are written for learning and clarity
 - Code quality and efficiency will improve over time
+
+--- 
+
+## 🔁 Revision List
+- Remove Duplicates from Sorted Array (Two Pointers)
+- Find First and Last Position of Element in Sorted Array
