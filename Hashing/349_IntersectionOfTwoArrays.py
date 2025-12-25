@@ -4,7 +4,8 @@ Given two integer arrays nums1 and nums2, return an array of their .
 Each element in the result must be unique and you may return the result in any order.
 """
 class Solution:
-    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+    @staticmethod
+    def intersection(nums1, nums2):
         seen = {}
         result = []
 
