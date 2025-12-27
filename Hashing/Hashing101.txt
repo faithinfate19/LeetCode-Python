@@ -1,0 +1,68 @@
+Hashing data structures in Python
+
+1️⃣ Set: Stores unique values only.
+
+seen = set()
+seen.add(3)
+
+if 3 in seen:
+    print("found")
+
+Used for:
+   - Contains Duplicate
+   - Intersection (unique)
+   - Fast lookup
+
+2️⃣ Dictionary (Hash Map): Stores key → value pairs.
+
+freq = {}
+freq['a'] = 1
+freq['a'] += 1
+
+Used for:
+    - Counting occurrences
+    - Tracking indices
+    - Mapping relationships
+
+Hashing Patterns:
+
+Pattern 1: Seen before?
+
+seen = set()
+for x in nums:
+    if x in seen:
+        return True
+    seen.add(x)
+
+
+Example:
+    1️⃣Contains Duplicate
+    2️⃣Two Sum (variant)
+
+Pattern 2: Frequency counting
+freq = {}
+
+for c in s:
+    freq[c] = freq.get(c, 0) + 1
+
+
+for k, v in freq.items():
+    if v == 1:
+        return k
+
+
+Example:
+    1️⃣Valid Anagram
+    2️⃣First Unique Character
+
+Pattern 3: Hashing with indices
+seen = {}
+
+for i, num in enumerate(nums):
+    if target - num in seen:
+        return [seen[target - num], i]
+    seen[num] = i
+
+
+Example:
+    1️⃣Two Sum
